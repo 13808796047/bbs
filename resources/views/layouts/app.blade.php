@@ -14,7 +14,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-</head> 
+</head>
 
 <body>
 <div id="app" class="{{ route_class() }}-page">
