@@ -61,3 +61,19 @@
     </div>
 
 @endsection
+@section('styles')
+    <link rel="stylesheet" href="{{ asset('css/simditor.css') }}">
+@stop
+@section('scripts')
+    <script src="{{ asset('js/module.min.js') }}"></script>
+    <script src="{{ asset('js/hotkeys.min.js') }}"></script>
+    <script src="{{ asset('js/uploader.min.js') }}"></script>
+    <script src="{{ asset('js/simditor.min.js') }}"></script>
+    <script>
+        $(() => {
+            var editor = new Simditor({
+                textarea: $('#editor'),
+            });
+        });
+    </script>
+@stop
